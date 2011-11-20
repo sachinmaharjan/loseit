@@ -1,5 +1,8 @@
 Maharjan::Application.routes.draw do
   get "home/index"
+  match '/about' => 'home#about'
+  match '/contact' => 'home#contact'
+  
 
   root :to => "home#index"
 
