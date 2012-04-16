@@ -1,13 +1,13 @@
 source 'http://rubygems.org'
 
 gem 'haml', '3.1.4'
-gem 'sqlite3'
 gem 'rails', '3.0.11'
 gem 'rake', '0.8.7'
 gem 'sass', "3.1.2"
 gem 'gravatar_image_tag'
 gem 'json'
 gem 'jquery-rails'
+gem 'pg'
 
 
 group :development do
