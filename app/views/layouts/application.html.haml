@@ -1,9 +1,11 @@
 !!!
 %html
   %head
-    %title Maharjan
+    %title Lose it!
     = stylesheet_link_tag :all
     = javascript_include_tag :defaults
     = csrf_meta_tag
   %body
+    = render :partial => 'layouts/header'
     = yield
+    = render :partial => 'layouts/footer'

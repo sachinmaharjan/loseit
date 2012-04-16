@@ -1,0 +1,27 @@
+.container{:style=>"width:820px; margin:0 auto;"}
+  .content
+    .hero-unit
+      %h2
+        -#= @title
+      - [:notice, :error, :message, :success].each do |key|
+        - unless flash[key].blank? then
+          %div{ :class => "alert alert-#{key}" }
+            = flash[key]
+      .inlineblock{:style => 'margin-top: 30px; border-right: 3px solid #dddddd; padding-right: 30px;'}
+        = form_for(:session, :url => sessions_path) do |f|
+          .field
+            = f.label :email
+            = f.text_field :email
+          .field
+            = f.label :password
+            = f.password_field :password
+          .actions{:style => 'border-top: 0px solid #f5f5f5;'}
+            = f.submit "Sign in", :class => "btn primary"
+            = link_to "Forgot Password", "/forgotpassword"
+
+      .inlineblock{:style => 'margin-top: 30px;margin-left: 30px;vertical-align: top;'}
+        %h4 New Members
+        %br
+        = link_to image_tag('/images/register.png', :style => 'height: 100px;'), signup_path
+        %br
+        #{link_to "Sign up now!", signup_path}

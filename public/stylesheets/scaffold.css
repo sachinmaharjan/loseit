@@ -1,0 +1,35 @@
+body { background-color: #fff; color: #333; }
+
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors label{
+    color: #B94A48;
+}
+
+.field_with_errors input, .field_with_errors textarea{
+   color: #B94A48;
+border-color: #EE5F5B;
+}
+
+
+
+

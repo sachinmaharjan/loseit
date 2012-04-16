@@ -1,0 +1,125 @@
+.hero-unit{
+	min-height: 300px;
+}
+footer h5{
+	margin-left: 30px;
+}
+.pics{
+
+	margin: 3px;
+	vertical-align:middle;
+	border: 4px solid #e3e3e3;
+	border-radius: 6px;
+}
+.imgshots{
+	height: 300px;
+	width: 420px;
+	margin-bottom: -5px;
+	border-radius: 6px;
+}
+.donatepage{
+	width: 100%;
+	border: 2px solid #E0E0E0;
+	height: 2576px;
+	border-radius: 6px;
+}
+.pg_container {
+width: 100%;
+position: relative;
+height: 412px;
+}
+ul.pg_photos {
+position: absolute;
+top: 0;
+left: 0;
+height: 412px;
+width: 12188px;
+list-style-type: none;
+}
+ul.pg_photos li a {
+display: block;
+border: 6px solid white;
+position: relative;
+-moz-box-shadow: 1px 1px 7px #000;
+-webkit-box-shadow: 1px 1px 7px #000;
+box-shadow: 1px 1px 7px #000;
+}
+ul.pg_photos li img {
+display: block;
+border: none;
+}
+ul.pg_photos li a span {
+background: #423B30;
+opacity: 0.6;
+position: absolute;
+padding: 20px;
+font-size: 12px;
+text-shadow: 1px 1px 1px black;
+top: 20px;
+right: 0px;
+color: white;
+-moz-box-shadow: 1px 0px 2px #000 inset;
+-webkit-box-shadow: 1px 0px 2px #000 inset;
+box-shadow: 1px 0px 2px #000 inset;
+}
+.pg_scrollWrapper {
+position: absolute;
+left: 50%;
+width: 300px;
+margin-left: -175px;
+padding: 10px 15px;
+height: 4px;
+background: #111;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+}
+.ui-widget {
+font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+font-size: 1.1em;
+}
+.ui-widget-content {
+border: 1px solid #DDD;
+background: #EEE url(images/ui-bg_highlight-soft_100_eeeeee_1x100.png) 50% top repeat-x;
+color: #333;
+}
+.ui-slider {
+position: relative;
+text-align: left;
+}
+.ui-slider-horizontal {
+height: 2px;
+background: #555;
+border: 1px solid black;
+}
+.ui-slider .ui-slider-handle {
+position: absolute;
+z-index: 2;
+width: 1.2em;
+height: 1.2em;
+cursor: default;
+}
+.ui-slider-horizontal .ui-slider-handle {
+top: -.3em;
+margin-left: -.6em;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+background: #A0A0A0;
+cursor: pointer;
+border: 1px solid black;
+color: #1C94C4;
+font-weight: bold;
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+border-radius: 8px;
+margin-top: -4px;
+}
+ul.pg_photos li {
+display: list-item;
+text-align: -webkit-match-parent;
+}
+ul.pg_photos li {
+float: left;
+position: relative;
+margin-right: 7px;
+}

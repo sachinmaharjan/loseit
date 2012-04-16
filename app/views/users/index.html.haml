@@ -1,0 +1,57 @@
+%script{:type => "text/javascript", :src => "/javascripts/jquery-1.7.js"}
+= javascript_include_tag "/javascripts/scriptaculous/prototype"
+= javascript_include_tag "/javascripts/scriptaculous/scriptaculous"
+
+
+
+.container{:style=>"width:820px; margin:0 auto;"}
+  .content
+    .hero-unit
+      -#- form_tag 'users/search', :method => 'get' do
+      -#  %p
+      -#    = text_field_with_auto_complete :user, :name , :skip_style => true
+      -#    = submit_tag "Search", :name => nil
+      %br
+      %h2.inlineblock Members
+      .inlineblock{:style => "float:right;"}
+        = link_to image_tag('add.png'), new_user_path
+        = link_to image_tag('users/members.png'), "/members"
+      %br
+      %br
+      - @users.each do |u|
+        %div
+          %div{:style=> "display:inline-block;"}
+            %p= gravatar_for u
+          %div{:style=> "display:inline-block;width: 500px;"}
+            %p= link_to u.name, "members/#{u.member_id}"
+            = mail_to u.email
+          %div{:style=> "float:right;display: inline-block;"}
+            - if current_user?(u)
+              = link_to 'Edit', "/members/#{u.member_id}/edit"
+            - else
+              = link_to 'Edit', "#unauthorized" , :onclick => "$('#unauthorized').show()"
+            %br
+            - if current_user.admin?
+              = link_to 'Destroy', u, :confirm => 'Are you sure?', :method => :delete
+        %br
+  #unauthorized.modal.hide.fade.in{:style => "display: none; "}
+    .modal-header
+      %a.close{"data-dismiss" => "modal"} ×
+      %h3 Modal Heading
+    .modal-body
+      %h4 Text in a modal
+      %p Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem.
+      %h4 Popover in a modal
+      %p
+        This
+        %a.btn.popover-test{"data-content" => "And here's some amazing content. It's very engaging. right?", "data-original-title" => "A Title", :href => "#"} button
+        should trigger a popover on hover.
+      %h4 Tooltips in a modal
+      %p
+        %a.tooltip-test{"data-original-title" => "Tooltip", :href => "#"} This link
+        and
+        %a.tooltip-test{"data-original-title" => "Tooltip", :href => "#"} that link
+        should have tooltips on hover.
+    .modal-footer
+      %a.btn.btn-primary{:href => "#"} Save changes
+      %a.btn{"data-dismiss" => "modal", :href => "#"} Close

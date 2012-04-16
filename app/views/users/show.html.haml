@@ -1,0 +1,21 @@
+.container{:style=>"width:820px; margin:0 auto;"}
+  .content
+    .hero-unit
+      %h2.inlineblock
+        = @title
+      .inlineblock{:style => "float:right;"}
+        - if @user == current_user
+          = link_to image_tag('users/edit.png'), "/members/#{@user.member_id}/edit"
+        = link_to image_tag('users/members.png'), "/members"
+      %br
+      %br
+      %p#notice= notice
+      .inlineblock
+        = gravatar_for @user
+      .inlineblock
+        %p
+          %b Name:
+          = @user.name
+        %p
+          %b Email:
+          = @user.email

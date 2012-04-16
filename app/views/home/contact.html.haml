@@ -1,23 +1,41 @@
-.topbar
-  .fill
-    .container
-      %a.brand{:href => "/"} MaharZen
-      %ul.nav
-        %li
-          %a{:href => "/"} Home
-        %li
-          %a{:href => "/about"} About
-        %li.active
-          %a{:href => "/contact"} Contact
-
 .container{:style=>"width:820px; margin:0 auto;"}
   .content
     .hero-unit
-      %h2 Contact!
-      %h5 @ sachin.gen@gmail.com
-      %h5 f: /sachin.maharjan
-      %h5 t: #sachinmaharjan
-      %h5 tumbler: sachinmaharjan.tumbler.com
-  
-%footer
-  %h5 © Sachin Maharjan 2011
+      #share{:style => "float:right;"}
+        %small 
+          %a{:href => "http://www.facebook.com/loseit"}
+            %img{:src=> "/images/fb.png", :style=>"height:55px;"}
+        %small 
+          %a{:href => "http://twitter.com/#loseit"}
+            %img{:src=> "/images/tw.png", :style=>"height:55px;"}
+        %small
+          %a{:href => "mailto:loseitwithus@gmail.com"}
+            %img{:src=> "/images/email.png", :style=>"height:55px;"}
+      %h2
+        = @title
+      %h4 Please fill the form below:
+      - [:notice, :error, :message, :success].each do |key| 
+        - unless flash[key].blank? then 
+          %div{ :class => "alert alert-#{key}" }
+            = flash[key]
+            - if @contact.errors.any?
+              %ul
+                - @contact.errors.full_messages.each do |msg|
+                  %li= msg
+      = form_tag :controller=>"home", :action=>"sendmessage" do
+        %p
+          Name 
+          %br/
+          #{text_field("contact", "name")}
+        %p
+          Email 
+          %br/
+          #{text_field("contact", "email_address")}
+        %p
+          Message
+          %br/
+          = text_area("contact", "message", {"cols"=>"100", "rows"=>"6", "style" => "width: 450px; height: 200px;"})
+        %br
+        = submit_tag "Send", :class => "btn primary"
+        
+          

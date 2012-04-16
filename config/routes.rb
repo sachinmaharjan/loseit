@@ -1,8 +1,23 @@
 Maharjan::Application.routes.draw do
+  match '/updatepassword/:code' => 'users#updatepassword'
+  resources :members , :as => :users , :controller => :users
+  resources :sessions, :only => [:new, :create, :destroy]
+
   get "home/index"
   match '/about' => 'home#about'
   match '/contact' => 'home#contact'
-  
+  match '/contact/send' => 'home#sendmessage', :via => [:post]
+  match '/shots' => 'home#shots'
+  match '/donate' => 'home#donate'
+
+  match '/signup' => 'users#new'
+  match '/signin' => 'sessions#new'
+  match '/signout' => 'sessions#destroy'
+  match '/forgotpassword' => 'sessions#forgotpassword'
+  match '/sendresetpasswordlink' => 'sessions#sendresetpasswordlink'
+  match '/resetpassword/:code' => 'sessions#resetpassword'
+
+
 
   root :to => "home#index"
 

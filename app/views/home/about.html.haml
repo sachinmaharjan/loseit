@@ -1,20 +1,59 @@
-.topbar
-  .fill
-    .container
-      %a.brand{:href => "/"} MaharZen
-      %ul.nav
-        %li
-          %a{:href => "/"} Home
-        %li.active
-          %a{:href => "/about"} About
-        %li
-          %a{:href => "/contact"} Contact
-
 .container{:style=>"width:820px; margin:0 auto;"}
   .content
     .hero-unit
-      %h2 About me!
-      %h5 If you rise above the pettiness of people and small annoyances, you will be able to give your energy to the important things.
-  
-%footer
-  %h5 © Sachin Maharjan 2011
+      %h2 
+        = @title
+      %h5 Empowering mothers in a remote villages of Nepal
+      %ul
+        %li to feed
+        %li to care
+        %li to educate 
+        %li to work
+      %p
+        %img{:src => "/images/nepal2.png", :alt => "Nepal"}
+        -#%img{:src => "/images/nepal.png", :alt => "Nepal"}
+    %h3 Meet the team
+    #div
+      #div.profile
+        %a.profile-picture{:href => "#"}
+          %img.thumbnail{:alt => "", :src => "/images/sachin.jpg"}
+        %h2 Elina Maharjan
+        %h6 Founding Director/CTO
+        %p Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+      #div.profile
+        %a.profile-picture{:href => "#"}
+          %img.thumbnail{:alt => "", :src => "/images/snehi.jpg"}
+        %h2 Nancy L. Opperman
+        %h6 CFO/Publicity Officer
+        %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+      #div.profile
+        %a.profile-picture{:href => "#"}
+          %img.thumbnail{:alt => "", :src => "images/beenu.jpg"}
+        %h2 Daisy Segundo
+        %h6 Program Coordinator/Publicity Director
+        %p Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+      #div.profile
+        %a.profile-picture{:href => "#"}
+          %img.thumbnail{:alt => "", :src => "/images/ritesh.jpg"}
+        %h2 Julie Riseman
+        %h6 Operations Director/Advisor
+        %p Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+      #div.profile
+        %a.profile-picture{:href => "#"}
+          %img.thumbnail{:alt => "", :src => "/images/ritesh.jpg"}
+        %h2 Emily Stewart
+        %h6 Operations Director/Advisor
+        %p Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+
+
+%script{:src => "/javascripts/jquery-1.7.js", :type => "text/javascript"}
+%script{:src => "/javascripts/jquery.bxSlider.min.js", :type => "text/javascript"}
+:javascript
+  $(document).ready(function(){
+    $('#members').bxSlider(
+    {
+      ticker: true,
+      tickerSpeed: 2500
+    }
+    );
+  });

@@ -1,0 +1,32 @@
+.container{:style=>"width:820px; margin:0 auto;"}
+  .content
+    .hero-unit
+      %h2
+        = @title
+      .change-gravatar
+        = gravatar_for @user, :size => 60
+        %br
+        %a{:href => "http://gravatar.com/emails"} Change
+      %br
+      = form_for(@user, :url => "/members/#{@user.member_id}")  do |f|
+        - if @user.errors.any?
+          .alert.alert-error.error
+            %h5 Please correct the error below:
+            %ul
+              - @user.errors.full_messages.each do |msg|
+                %li= msg
+
+        .field
+          = f.label :name
+          = f.text_field :name
+        .field
+          = f.label :email
+          = f.text_field :email
+        .field
+          = f.label :password
+          = f.password_field :password
+        .field
+          = f.label :password_confirmation, "Confirmation"
+          = f.password_field :password_confirmation
+
+        = submit_tag "Submit", :class => "btn primary"

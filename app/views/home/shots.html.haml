@@ -1,0 +1,29 @@
+.container{:style=>"width:820px; margin:0 auto;"}
+  .content
+    .hero-unit
+      %h2 
+        =@title
+      #pg_scrollWrapper.pg_scrollWrapper
+        #slider{:class => "slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"}
+          %a{:href=>"#", :class=>"ui-slider-handle ui-state-default ui-corner-all", :style => "left: 0%;"}
+
+      %br
+      %br
+      #slider.nivoSlider
+        %img{:src=>"images/shots/1.jpg", :alt=>""}
+        %a{:href=>"http://dev7studios.com"}
+          %img{:src=>"images/shots/2.jpg", :alt=>"", :title =>"htmlcaption" }
+        %img{:src=>"images/shots/3.jpg", :alt=> "", :title=> "this is an example of a caption" }
+        %img{:src=>"images/slide4.jpg", :alt=>""}
+      #htmlcaption.nivo-html-caption
+        %strong This is an example.
+      %br
+      %br
+      #pg_container.pg_container
+        #ul.pg_photos{:class => "pg_photos"}
+          = @photo_divs
+
+  
+%script{:type => "text/javascript", :src=>"/javascripts/shots1.js"} 
+%script{:type => "text/javascript", :src=>"/javascripts/shots2.js"}
+%script{:type => "text/javascript", :src=>"/javascripts/shots3.js"}
