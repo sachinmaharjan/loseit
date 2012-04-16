@@ -11,7 +11,7 @@ gem 'jquery-rails'
 
 group :development do
   gem 'heroku', '2.3.0'
-  gem 'pg'
+  gem 'sqlite3'
   gem 'ruby-debug', '0.10.4'
 end
 
@@ -33,5 +33,5 @@ group :test do
 end
 
 group :production do
-  gem 'pg'
+   gem 'sqlite3'
 end
