@@ -11,6 +11,7 @@ gem 'jquery-rails'
 
 group :development do
   gem 'heroku', '2.3.0'
+  gem 'pg'
   gem 'ruby-debug', '0.10.4'
 end
 
@@ -24,7 +25,6 @@ end
 
 group :development, :test, :staging do
   gem 'mail_safe', '0.3.1'
-  gem 'sqlite3'
 end
 
 group :test do
