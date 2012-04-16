@@ -7,7 +7,6 @@ gem 'sass', "3.1.2"
 gem 'gravatar_image_tag'
 gem 'json'
 gem 'jquery-rails'
-gem 'pg'
 
 
 group :development do
@@ -25,9 +24,14 @@ end
 
 group :development, :test, :staging do
   gem 'mail_safe', '0.3.1'
+  gem 'sqlite3'
 end
 
 group :test do
   gem 'factory_girl_rails', '1.0.1'
   gem 'faker', '0.9.5'
+end
+
+group :production do
+  gem 'pg'
 end
