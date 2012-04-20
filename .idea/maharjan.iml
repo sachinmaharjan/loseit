@@ -78,7 +78,7 @@
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="mysql2" version="0.2.7" bound="LATEST_IN_BRANCH" git="false" path="false" doRequire="true" />
+        <dependency name="pg" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
     </requirement>

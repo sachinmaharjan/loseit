@@ -13,7 +13,7 @@ group :development do
   gem 'heroku', '2.3.0'
   gem 'sqlite3'
   gem 'ruby-debug', '0.10.4'
-  gem 'mysql2', '~> 0.2.7'
+  gem 'pg'
 end
 
 group :development, :test do
@@ -31,9 +31,9 @@ end
 group :test do
   gem 'factory_girl_rails', '1.0.1'
   gem 'faker', '0.9.5'
-  gem 'sqlite3'
+  gem 'pg'
 end
 
 group :production do
-  gem 'mysql2', '~> 0.2.7'
+  gem 'pg'
 end
