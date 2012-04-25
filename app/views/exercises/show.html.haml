@@ -1,0 +1,13 @@
+.container{:style=>"width:820px; margin:0 auto;"}
+  .content
+    .hero-unit
+      %div.exerciselinks
+        = link_to 'Edit', edit_exercise_path(@exercise)
+
+      %p#notice= notice
+      %p
+        %b Activity Type:
+        = @exercise.activity
+      %p
+        %b Duration minutes:
+        = @exercise.duration_minutes

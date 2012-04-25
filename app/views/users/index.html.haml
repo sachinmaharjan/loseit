@@ -21,7 +21,7 @@
       - @users.each do |u|
         %div
           %div{:style=> "display:inline-block;"}
-            %p= gravatar_for u
+            %p.g-image= gravatar_for u
           %div{:style=> "display:inline-block;width: 500px;"}
             %p= link_to u.name, "members/#{u.member_id}"
             = mail_to u.email

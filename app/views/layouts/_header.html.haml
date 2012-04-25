@@ -15,9 +15,9 @@
           %ul.nav
             - if signed_in?
               %li
-                %div{:style=>"display:inline-block; vertical-align: middle;"}
+                %div{:style=>"display:inline-block;"}
                   = gravatar_for current_user, :size => 20 , :style => "display:inline-block;"
-                  %strong{:style => "vertical-align: super;display:inline-block;"}
+                  %strong{:style => "display:inline-block;", :id => "namelink"}
                     = link_to current_user.name, "/members/#{current_user.member_id}"
                 = link_to "Sign out", signout_path, :method => :delete, :style => "display:inline-block;"
             - else

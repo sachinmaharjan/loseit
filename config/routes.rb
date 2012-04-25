@@ -1,4 +1,6 @@
 Maharjan::Application.routes.draw do
+  resources :exercises
+
   match '/updatepassword/:code' => 'users#updatepassword'
   resources :members , :as => :users , :controller => :users
   resources :sessions, :only => [:new, :create, :destroy]

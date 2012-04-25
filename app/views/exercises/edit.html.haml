@@ -1,0 +1,8 @@
+.container{:style=>"width:820px; margin:0 auto;"}
+  .content
+    .hero-unit
+      %div.exerciselinks
+        = link_to 'Cancel', @exercise
+      %h3 Editing exercise
+      %br
+      = render 'form'

@@ -10,7 +10,7 @@
       %br
       %br
       %p#notice= notice
-      .inlineblock
+      .inlineblock.g-image
         = gravatar_for @user
       .inlineblock
         %p
@@ -19,3 +19,28 @@
         %p
           %b Email:
           = @user.email
+      %br
+      %br
+      %div.exerciselinks
+        = link_to "New Exercise", "/exercises/new"
+      - if @user.exercises.nil?
+        %p No Exercise has been recorded.
+      - else
+        %div.exerciseheader
+          %div{:class => "inlineblock", :id => "first"}
+            %strong Time
+          %div{:class => "inlineblock", :id => "second"}
+            %strong Exercise Type
+          %div{:class => "inlineblock", :id => "third"}
+            %strong Duration
+        - for exercise in @user.exercises do
+          %div.exercise
+            %div{:class => "inlineblock", :id => "first"}
+              %p= exercise.created_at.to_formatted_s(:db)
+            %div{:class => "inlineblock", :id => "second"}
+              %p= link_to exercise.activity, "/exercises/#{exercise.id}"
+            %div{:class => "inlineblock", :id => "third"}
+              %p
+                = exercise.duration_minutes
+                %span min
+          %br

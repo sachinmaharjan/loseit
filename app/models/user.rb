@@ -22,7 +22,7 @@ class User < ActiveRecord::Base
 
   before_save :encrypt_password
   before_create :before_validation_on_create
-
+  has_many :exercises, :order => "created_at DESC"
 
   def self.authenticate(email, submitted_password)
     user = find_by_email(email)
