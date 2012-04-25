@@ -10,7 +10,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120423044527) do
+ActiveRecord::Schema.define(:version => 20120425063633) do
+
+  create_table "diets", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "items"
+    t.string   "food_consumed"
+    t.integer  "serving"
+    t.integer  "calories"
+    t.integer  "sodium"
+    t.integer  "total_fruit_serving"
+    t.integer  "total_vegetable_serving"
+    t.integer  "water"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "exercises", :force => true do |t|
     t.integer  "user_id"

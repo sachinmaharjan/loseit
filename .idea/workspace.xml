@@ -5,23 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3b023ea-0a92-4470-b82f-fa08100219c1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/maharjan.iml" afterPath="$PROJECT_DIR$/.idea/maharjan.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/about.html.haml" afterPath="$PROJECT_DIR$/app/views/home/about.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/contact.html.haml" afterPath="$PROJECT_DIR$/app/views/home/contact.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.html.haml" afterPath="$PROJECT_DIR$/app/views/home/index.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/index.html.haml" afterPath="$PROJECT_DIR$/app/views/users/index.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/exercises/edit.html.haml" afterPath="$PROJECT_DIR$/app/views/exercises/edit.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/exercises/show.html.haml" afterPath="$PROJECT_DIR$/app/views/exercises/show.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/new.html.haml" afterPath="$PROJECT_DIR$/app/views/users/new.html.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/show.html.haml" afterPath="$PROJECT_DIR$/app/views/users/show.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/bootstrap.css" afterPath="$PROJECT_DIR$/public/stylesheets/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/scaffold.css" afterPath="$PROJECT_DIR$/public/stylesheets/scaffold.css" />
     </list>
     <ignored path="maharjan.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,19 +37,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="new.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/exercises/new.html.haml">
+      <file leaf-file-name="diets_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/diets_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="86" selection-start="130" selection-end="130" vertical-scroll-proportion="-3.8888888">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/exercises/edit.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="25" selection-start="82" selection-end="100" vertical-scroll-proportion="-2.3333333">
+            <state line="5" column="50" selection-start="154" selection-end="154" vertical-scroll-proportion="13.222222">
               <folding />
             </state>
           </provider>
@@ -66,43 +49,43 @@
       <file leaf-file-name="show.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/users/show.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="81" selection-start="1005" selection-end="1005" vertical-scroll-proportion="-8.444445">
+            <state line="27" column="55" selection-start="782" selection-end="782" vertical-scroll-proportion="-20.407408">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="exercise.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/exercise.rb">
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="56" selection-start="85" selection-end="92" vertical-scroll-proportion="-0.7777778">
+            <state line="36" column="9" selection-start="698" selection-end="698" vertical-scroll-proportion="0.5833333">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="exercises_controller.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/exercises_controller.rb">
+      <file leaf-file-name="edit.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/diets/edit.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="25" selection-start="193" selection-end="193" vertical-scroll-proportion="0.378866">
+            <state line="4" column="56" selection-start="134" selection-end="134" vertical-scroll-proportion="-3.1111112">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="exercises_routing_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/routing/exercises_routing_spec.rb">
+      <file leaf-file-name="new.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/diets/new.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="122" selection-end="122" vertical-scroll-proportion="-4.6296296">
+            <state line="4" column="34" selection-start="104" selection-end="104" vertical-scroll-proportion="-3.1111112">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <file leaf-file-name="show.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/diets/show.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="89" selection-start="1932" selection-end="1932" vertical-scroll-proportion="-29.716982">
+            <state line="6" column="72" selection-start="179" selection-end="243" vertical-scroll-proportion="13.740741">
               <folding />
             </state>
           </provider>
@@ -111,7 +94,25 @@
       <file leaf-file-name="show.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/exercises/show.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="321" selection-end="321" vertical-scroll-proportion="-10.111111">
+            <state line="6" column="72" selection-start="187" selection-end="251" vertical-scroll-proportion="-1.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/exercises/new.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="10" selection-start="108" selection-end="108" vertical-scroll-proportion="-3.1111112">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/exercises/edit.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="54" selection-start="338" selection-end="338" vertical-scroll-proportion="-7.7777777">
               <folding />
             </state>
           </provider>
@@ -120,7 +121,7 @@
       <file leaf-file-name="bootstrap.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="827" column="71" selection-start="91187" selection-end="91187" vertical-scroll-proportion="-0.18518518">
+            <state line="859" column="14" selection-start="91657" selection-end="91657" vertical-scroll-proportion="-3.5925925">
               <folding />
             </state>
           </provider>
@@ -140,22 +141,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/stylesheets/scaffold.css" />
-        <option value="$PROJECT_DIR$/app/views/users/index.html.haml" />
-        <option value="$PROJECT_DIR$/db/migrate/20120423044527_create_exercises.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/exercise.rb" />
-        <option value="$PROJECT_DIR$/app/views/exercises/_form.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/exercises/show.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/exercises/edit.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/exercises/new.html.haml" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_header.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/diets/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/diets/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/diets/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/diets/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/diets/new.html.haml" />
+        <option value="$PROJECT_DIR$/app/controllers/diets_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/diets/_form.html.haml" />
+        <option value="$PROJECT_DIR$/app/models/diet.rb" />
         <option value="$PROJECT_DIR$/public/stylesheets/bootstrap.css" />
+        <option value="$PROJECT_DIR$/app/views/diets/show.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/exercises/show.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/exercises/new.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/exercises/edit.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/diets/edit.html.haml" />
         <option value="$PROJECT_DIR$/app/views/users/show.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/exercises/index.html.haml" />
-        <option value="$PROJECT_DIR$/spec/routing/exercises_routing_spec.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/exercises_controller.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -314,6 +315,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="exercises" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maharjan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="loseit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="diets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -766,15 +789,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="38" y="22" width="1242" height="774" extended-state="0" />
+    <frame x="38" y="22" width="1242" height="778" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29032257" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4212828" sideWeight="0.9991715" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24384236" sideWeight="0.7096774" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28407225" sideWeight="0.5787172" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.08163265" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16954474" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -820,103 +843,114 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/test.sqlite3">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="61" selection-start="1521" selection-end="1521" vertical-scroll-proportion="-3.2962964">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/exercises/_form.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="18" selection-start="278" selection-end="278" vertical-scroll-proportion="-6.2222223">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="87" selection-start="975" selection-end="975" vertical-scroll-proportion="-14.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="77" selection-start="681" selection-end="681" vertical-scroll-proportion="-14.185185">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="827" column="71" selection-start="91187" selection-end="91187" vertical-scroll-proportion="-0.18518518">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/exercises/show.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="321" selection-end="321" vertical-scroll-proportion="-10.111111">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="81" selection-start="1005" selection-end="1005" vertical-scroll-proportion="-8.444445">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/exercises/edit.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="25" selection-start="82" selection-end="100" vertical-scroll-proportion="-2.3333333">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/exercise.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="56" selection-start="85" selection-end="92" vertical-scroll-proportion="-0.7777778">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/exercises/new.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="86" selection-start="130" selection-end="130" vertical-scroll-proportion="-3.8888888">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/routing/exercises_routing_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="122" selection-end="122" vertical-scroll-proportion="-4.6296296">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="89" selection-start="1932" selection-end="1932" vertical-scroll-proportion="-29.716982">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/exercises_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="25" selection-start="193" selection-end="193" vertical-scroll-proportion="0.378866">
+        <state line="4" column="65" selection-start="109" selection-end="165" vertical-scroll-proportion="-3.1111112">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/diets/_form.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="21" selection-start="548" selection-end="548" vertical-scroll-proportion="-8.944445">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="89" selection-start="1932" selection-end="1932" vertical-scroll-proportion="-46.666668">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/exercise.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="69" selection-start="95" selection-end="161" vertical-scroll-proportion="-1.5555556">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/diet.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="71" selection-start="564" selection-end="564" vertical-scroll-proportion="-3.1111112">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/diets/new.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="34" selection-start="104" selection-end="104" vertical-scroll-proportion="-3.1111112">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/diets_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="50" selection-start="154" selection-end="154" vertical-scroll-proportion="13.222222">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="859" column="14" selection-start="91657" selection-end="91657" vertical-scroll-proportion="-3.5925925">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/exercises/show.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="72" selection-start="187" selection-end="251" vertical-scroll-proportion="-1.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/exercises/new.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="10" selection-start="108" selection-end="108" vertical-scroll-proportion="-3.1111112">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/exercises/edit.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="54" selection-start="338" selection-end="338" vertical-scroll-proportion="-7.7777777">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/diets/show.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="72" selection-start="179" selection-end="243" vertical-scroll-proportion="13.740741">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/diets/edit.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="56" selection-start="134" selection-end="134" vertical-scroll-proportion="-3.1111112">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="55" selection-start="782" selection-end="782" vertical-scroll-proportion="-20.407408">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="9" selection-start="698" selection-end="698" vertical-scroll-proportion="0.5833333">
           <folding />
         </state>
       </provider>

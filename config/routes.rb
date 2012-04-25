@@ -1,4 +1,6 @@
 Maharjan::Application.routes.draw do
+  resources :diets
+
   resources :exercises
 
   match '/updatepassword/:code' => 'users#updatepassword'

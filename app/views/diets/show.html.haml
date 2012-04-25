@@ -1,0 +1,33 @@
+.container{:style=>"width:820px; margin:0 auto;"}
+  .content
+    .hero-unit
+      %div.exerciselinks
+        = link_to 'Edit', edit_diet_path(@diet)
+      %p#notice= notice
+      - if current_user.admin? || current_user.id == @exercise.user_id
+        %p
+          %b Items:
+          = @diet.items
+        %p
+          %b Food consumed:
+          = @diet.food_consumed
+        %p
+          %b Serving:
+          = @diet.serving
+        %p
+          %b Calories:
+          = @diet.calories
+        %p
+          %b Sodium:
+          = @diet.sodium
+        %p
+          %b Total fruit serving:
+          = @diet.total_fruit_serving
+        %p
+          %b Total vegetable serving:
+          = @diet.total_vegetable_serving
+        %p
+          %b Water:
+          = @diet.water
+      - else
+        %p You do not have permission to view this data.

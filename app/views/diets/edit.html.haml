@@ -2,10 +2,10 @@
   .content
     .hero-unit
       %div.exerciselinks
-        = link_to 'Cancel', @exercise
-      %h3 Editing exercise
+        = link_to 'Cancel', @diet
+      %h3 Editing Diet
       %br
       - if current_user.admin? || current_user.id == @exercise.user_id
         = render 'form'
       - else
-        You do not have permissions to edit this data.
+        %p You do not have permission to edit this data.

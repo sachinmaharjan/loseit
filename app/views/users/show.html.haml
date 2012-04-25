@@ -10,7 +10,7 @@
       %br
       %br
       %p#notice= notice
-      .inlineblock.g-image
+      .inlineblock.g-image{:style => "vertical-align: top;"}
         = gravatar_for @user
       .inlineblock
         %p
@@ -19,28 +19,81 @@
         %p
           %b Email:
           = @user.email
+        %p
+          %b Total Exercise:
+          = @user.exercises.sum(:duration_minutes)
+          mins
       %br
       %br
-      %div.exerciselinks
-        = link_to "New Exercise", "/exercises/new"
-      - if @user.exercises.nil?
-        %p No Exercise has been recorded.
-      - else
-        %div.exerciseheader
-          %div{:class => "inlineblock", :id => "first"}
-            %strong Time
-          %div{:class => "inlineblock", :id => "second"}
-            %strong Exercise Type
-          %div{:class => "inlineblock", :id => "third"}
-            %strong Duration
-        - for exercise in @user.exercises do
-          %div.exercise
+      - if current_user.admin? || current_user == @user
+        %div.exerciselinks
+          = link_to "New Exercise", "/exercises/new"
+        - if @user.exercises.nil?
+          %p No Exercise has been recorded.
+        - else
+          %div.exerciseheader
             %div{:class => "inlineblock", :id => "first"}
-              %p= exercise.created_at.to_formatted_s(:db)
+              %strong Date
             %div{:class => "inlineblock", :id => "second"}
-              %p= link_to exercise.activity, "/exercises/#{exercise.id}"
+              %strong Exercise Type
             %div{:class => "inlineblock", :id => "third"}
-              %p
-                = exercise.duration_minutes
-                %span min
-          %br
+              %strong Duration
+          - for exercise in @user.exercises do
+            %div.exercise
+              %div{:class => "inlineblock", :id => "first"}
+                %p= exercise.created_at.to_formatted_s(:db)
+              %div{:class => "inlineblock", :id => "second"}
+                %p= link_to exercise.activity, "/exercises/#{exercise.id}"
+              %div{:class => "inlineblock", :id => "third"}
+                %p
+                  = exercise.duration_minutes
+                  %span min
+        %br
+        %br
+        %div.exerciselinks
+          = link_to "New Diet", "/diets/new"
+        - if @user.diets.nil?
+          %p No Diet has been recorded.
+        - else
+          %div.exerciseheader
+            %div{:class => "inlineblock", :id => "date"}
+              %strong Date
+            %div{:class => "inlineblock", :id => "fifth"}
+              %strong Items
+            %div{:class => "inlineblock", :id => "third"}
+              %strong Food Consumed
+            %div{:class => "inlineblock", :id => "fifth"}
+              %strong Serving
+            %div{:class => "inlineblock", :id => "fifth"}
+              %strong Calories
+            %div{:class => "inlineblock", :id => "fifth"}
+              %strong Sodium
+            %div{:class => "inlineblock", :id => "fifth"}
+              %strong Fruit
+            %div{:class => "inlineblock", :id => "fifth"}
+              %strong Veges
+            %div{:class => "inlineblock", :id => "fifth"}
+              %strong Water
+          - for diet in @user.diets do
+            %div.exercise
+              %div{:class => "inlineblock", :id => "date"}
+                %p= link_to diet.created_at.to_s(:db), "/diets/#{diet.id}"
+              %div{:class => "inlineblock", :id => "fifth"}
+                %p= diet.items
+              %div{:class => "inlineblock", :id => "third"}
+                %p= diet.food_consumed
+              %div{:class => "inlineblock", :id => "fifth"}
+                %p= diet.serving
+              %div{:class => "inlineblock", :id => "fifth"}
+                %p= diet.calories
+              %div{:class => "inlineblock", :id => "fifth"}
+                %p= diet.sodium
+              %div{:class => "inlineblock", :id => "fifth"}
+                %p= diet.total_fruit_serving
+              %div{:class => "inlineblock", :id => "fifth"}
+                %p= diet.total_vegetable_serving
+              %div{:class => "inlineblock", :id => "fifth"}
+                %p= diet.water
+            %br
+            %br
+            %br
