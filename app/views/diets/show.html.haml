@@ -4,7 +4,7 @@
       %div.exerciselinks
         = link_to 'Edit', edit_diet_path(@diet)
       %p#notice= notice
-      - if current_user.admin? || current_user.id == @exercise.user_id
+      - if current_user.admin? || current_user.id == @diet.user_id
         %p
           %b Items:
           = @diet.items
