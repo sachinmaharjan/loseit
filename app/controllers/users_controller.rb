@@ -53,7 +53,7 @@ class UsersController < ApplicationController
     if @user.save
       sign_in @user
       flash[:success] = "Welcome!"
-#      sendmail(@user)
+      sendmail(@user)
       redirect_to "/members/#{@user.member_id}"
     else
       flash[:error] = "Error!"
